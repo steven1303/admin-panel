@@ -1,0 +1,18 @@
+{
+    "name": "steven1303/admin-panel",
+    "description": "This is standard first panel package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Steven1303\\AdminPanel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Steven"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
