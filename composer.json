@@ -8,6 +8,13 @@
             "Steven1303\\AdminPanel\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "steven1303\\admin-panel\\AdminServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "Steven"
