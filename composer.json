@@ -16,7 +16,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "steven1303\\admin-panel\\AdminServiceProvider"
+        "Steven1303\\AdminPanel\\AdminServiceProvider"
       ]
     }
   },

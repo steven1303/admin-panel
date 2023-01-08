@@ -6,4 +6,4 @@ Route::get('admin', function() {
     return view('admin::layout');
 });
 
-Route::livewire('/home', 'counter');
+// Route::livewire('/home', 'counter');

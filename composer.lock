@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0fb442a1a0aaa32ceafd437363a204c9",
+    "content-hash": "dea92762dd3f0f0198e61fe55acdb2bd",
     "packages": [],
     "packages-dev": [
         {
@@ -4676,12 +4676,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "aaec42a988d601ed9b7490ab7cd5d8c308d6849c"
+                "reference": "9164469b555f0923bd6639d0cd6239c2e392a274"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/aaec42a988d601ed9b7490ab7cd5d8c308d6849c",
-                "reference": "aaec42a988d601ed9b7490ab7cd5d8c308d6849c",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/9164469b555f0923bd6639d0cd6239c2e392a274",
+                "reference": "9164469b555f0923bd6639d0cd6239c2e392a274",
                 "shasum": ""
             },
             "require": {
@@ -4748,7 +4748,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-05T06:36:11+00:00"
+            "time": "2023-01-07T07:45:49+00:00"
         },
         {
             "name": "symfony/http-kernel",
