@@ -6,6 +6,13 @@ use Illuminate\Support\ServiceProvider;
 
 class AdminServiceProvider extends ServiceProvider
 {
+    
+
+    public function register()
+    {
+        
+    }
+    
     public function boot()
     {
         $this->publishes([
@@ -14,10 +21,6 @@ class AdminServiceProvider extends ServiceProvider
 
         $this->loadRoutesFrom(__DIR__.'/routes/admin.php');
         $this->loadViewsFrom(__DIR__.'/views','admin');
-    }
-
-    public function register()
-    {
-        
+         
     }
 }
