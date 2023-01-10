@@ -1,9 +1,9 @@
 <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <div class="text-start navbar-brand-wrapper d-flex align-items-center justify-content-between">
-        <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../../../images/logo.svg"
+        <a class="navbar-brand brand-logo" href="../../index.html"><img src="{{ asset('assets/images/logo.svg') }}"
                 alt="logo" /></a>
-        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../../../images/logo-mini.svg"
-                alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img
+                src="{{ asset('assets/images/logo-mini.svg') }}" alt="logo" /></a>
         <button class="navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
             <span class="mdi mdi-menu"></span>
         </button>
