@@ -1,4 +1,4 @@
-<x-admin-panel>
+<x-admin-panel::app>
     <x-header name="header">
         <h1 class="mt-4">Static Navigation</h1>
     </x-header>
@@ -12,4 +12,4 @@
             page to see an example.
         </p>
     </div>
-</x-admin-panel>
+</x-admin-panel::app>

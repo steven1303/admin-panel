@@ -32,6 +32,8 @@ class AdminServiceProvider extends ServiceProvider
             Auth::class,
             Base::class
           ]);
+
+        
         
         Livewire::component('dashboard', Dashboard::class);
     }
