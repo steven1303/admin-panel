@@ -3,11 +3,12 @@
 namespace Steven1303\AdminPanel;
 
 use Livewire\Livewire;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Steven1303\AdminPanel\Controllers\Components\Dashboard;
 use Steven1303\AdminPanel\Controllers\Layouts\App;
 use Steven1303\AdminPanel\Controllers\Layouts\Auth;
 use Steven1303\AdminPanel\Controllers\Layouts\Base;
+use Steven1303\AdminPanel\Controllers\Components\Dashboard;
 
 class AdminServiceProvider extends ServiceProvider
 {
@@ -26,12 +27,13 @@ class AdminServiceProvider extends ServiceProvider
         ], 'admin-steven');
 
         $this->loadRoutesFrom(__DIR__.'/routes/admin.php');
-        $this->loadViewsFrom(__DIR__.'/views','admin-panel');
-        $this->loadViewComponentsAs('admin-panel', [
-            App::class,
-            Auth::class,
-            Base::class
-          ]);
+        $this->loadViewsFrom(__DIR__.'/views','admin');
+        Blade::componentNamespace('\\Steven1303\\AdminPanel\\Controllers\\Layouts', 'admin-panel');
+        // $this->loadViewComponentsAs('admin', [
+        //     App::class,
+        //     Auth::class,
+        //     Base::class
+        //   ]);
 
         
         

@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@include('admin-panel::components.header')
+@include('admin::components.header')
 
 <body>
     <div class="container-scroller">
         <!-- partial:../../partials/_navbar.html -->
-        @include('admin-panel::components.navbar')
+        @include('admin::components.navbar')
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
-            @include('admin-panel::components.sidebar')
+            @include('admin::components.sidebar')
             <div class="main-panel">
                 <div class="content-wrapper">
-                    <main>
-                        <div class="container-fluid px-4">
-                            {{-- {{ $header }} --}}
-                            <div class="card mb-4">
-                                {{ $slot }}
-                            </div>
-                        </div>
-                    </main>
+                    <div class="row">
+                        {{ $slot }}
+                    </div>
                 </div>
                 <!-- content-wrapper ends -->
                 <!-- partial:../../partials/_footer.html -->
-                @include('admin-panel::components.footer')
+                @include('admin::components.footer')
                 <!-- partial -->
             </div>
-            <!-- main-panel ends -->
+            <!-- main ends -->
         </div>
         <!-- page-body-wrapper ends -->
     </div>
@@ -38,7 +33,7 @@
     @yield('javascripts')
     <!-- End plugin js for this page-->
     <!-- inject:js -->
-    @include('admin-panel::components.script')
+    @include('admin::components.script')
     <!-- endinject -->
     <!-- plugin js for this page -->
     <!-- End plugin js for this page -->
