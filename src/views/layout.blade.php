@@ -9,7 +9,8 @@
         @include('admin::components.navbar')
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
-            @include('admin::components.sidebar')
+            @include('admin::components.sidebar-right')
+            @include('admin::components.sidebar-left')
             <div class="main-panel">
                 <div class="content-wrapper">
                     <div class="row">
