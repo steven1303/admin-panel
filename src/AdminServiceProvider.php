@@ -29,14 +29,5 @@ class AdminServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes/admin.php');
         $this->loadViewsFrom(__DIR__.'/views','admin');
         Blade::componentNamespace('\\Steven1303\\AdminPanel\\Controllers\\Layouts', 'admin-panel');
-        // $this->loadViewComponentsAs('admin', [
-        //     App::class,
-        //     Auth::class,
-        //     Base::class
-        //   ]);
-
-        
-        
-        Livewire::component('dashboard', Dashboard::class);
     }
 }
