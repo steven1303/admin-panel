@@ -2,13 +2,7 @@
 
 namespace Steven1303\AdminPanel;
 
-use Livewire\Livewire;
-use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Steven1303\AdminPanel\Controllers\Layouts\App;
-use Steven1303\AdminPanel\Controllers\Layouts\Auth;
-use Steven1303\AdminPanel\Controllers\Layouts\Base;
-use Steven1303\AdminPanel\Controllers\Components\Dashboard;
 
 class AdminServiceProvider extends ServiceProvider
 {
@@ -16,7 +10,8 @@ class AdminServiceProvider extends ServiceProvider
 
     public function register()
     {
-        
+        // Config Merging Standard
+        $this->mergeConfigFrom(__DIR__.'/config/config.php', 'admin-panel');
     }
     
     public function boot()
@@ -34,6 +29,5 @@ class AdminServiceProvider extends ServiceProvider
 
         // View
         $this->loadViewsFrom(__DIR__.'/views','admin');
-        // Blade::componentNamespace('\\Steven1303\\AdminPanel\\Controllers\\Layouts', 'admin-panel');
     }
 }
