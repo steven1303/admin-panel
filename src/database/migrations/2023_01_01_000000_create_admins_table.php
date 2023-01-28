@@ -15,8 +15,11 @@ class CreateAdminsTable extends Migration
     {
         Schema::create('admins', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('rule_id');
+            if(config('admin-panel.settings.roles') == 1){
+                $table->bigInteger('role_id');
+            }
             $table->string('username');
+            $table->string('email');
             $table->string('alias');
             $table->string('password');
             $table->string('recovery_password');

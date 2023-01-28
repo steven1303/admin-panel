@@ -17,7 +17,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('steven.dashboard') }}">
+            <a class="nav-link" href="{{ route('dashboard') }}">
                 <i class="mdi mdi-shield-check menu-icon"></i>
                 <span class="menu-title">Dashboard</span>
             </a>
@@ -30,7 +30,7 @@
             </a>
             <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="{{ route('steven.admin') }}">Admin </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{ route('admin.index') }}">Admin </a></li>
                 </ul>
             </div>
         </li>

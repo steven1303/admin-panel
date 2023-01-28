@@ -2,6 +2,7 @@
 
 namespace Steven1303\AdminPanel;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 class AdminServiceProvider extends ServiceProvider
@@ -29,5 +30,7 @@ class AdminServiceProvider extends ServiceProvider
 
         // View
         $this->loadViewsFrom(__DIR__.'/views','admin');
+        // View Content
+        $this->loadViewsFrom(__DIR__.'/views','admin-content');
     }
 }

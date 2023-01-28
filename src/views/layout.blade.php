@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@include('admin::components.header')
+<x-admin::header />
 
 <body>
     <div class="container-scroller">
         <!-- partial:../../partials/_navbar.html -->
-        @include('admin::components.navbar')
+        <x-admin::navbar />
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
-            @include('admin::components.sidebar-right')
-            @include('admin::components.sidebar-left')
+            <x-admin::sidebar-right />
+            <x-admin::sidebar-left />
             <div class="main-panel">
                 <div class="content-wrapper">
                     <div class="row">
@@ -19,7 +19,7 @@
                 </div>
                 <!-- content-wrapper ends -->
                 <!-- partial:../../partials/_footer.html -->
-                @include('admin::components.footer')
+                <x-admin::footer />
                 <!-- partial -->
             </div>
             <!-- main ends -->
@@ -34,7 +34,7 @@
     @yield('javascripts')
     <!-- End plugin js for this page-->
     <!-- inject:js -->
-    @include('admin::components.script')
+    <x-admin::script />
     <!-- endinject -->
     <!-- plugin js for this page -->
     <!-- End plugin js for this page -->
