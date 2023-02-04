@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                <button type="submit" class="btn btn-primary mb-2">Clear</button>
+                <button type="button" class="btn btn-primary mb-2">Clear</button>
             </form>
         </div>
     </div>
