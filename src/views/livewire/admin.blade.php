@@ -6,7 +6,9 @@
             <p class="card-description">
                 List Admin
             </p>
-            <button type="button" class="btn btn-info">Info</button>
+            {{-- <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Info</button> --}}
+            <button type="button" class="btn btn-info" wire:click="openModalAdminCreate"
+                wire:loading.attr="disabled">Create</button>
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
@@ -23,7 +25,7 @@
     </div>
 </div>
 
-@push('scripts')
+{{-- @push('scripts')
     <script>
         window.addEventListener('close-modal', event => {
             $('#addStudentModal').modal('hide');
@@ -40,4 +42,4 @@
             $('#viewStudentModal').modal('show');
         });
     </script>
-@endpush
+@endpush --}}

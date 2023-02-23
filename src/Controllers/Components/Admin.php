@@ -10,12 +10,12 @@ class Admin extends Component
 {
     
     public $username, $alias, $role_id;
-    public $modals = false;
+    public $openModal = false;
     
     protected $rules = [
         'username'=> ['required', 'unique:admins,username'],
-        'email'=> ['required', 'unique:admins,email'],
-        'alias' => ['required'],
+        // 'email'=> ['required', 'unique:admins,email'],
+        // 'alias' => ['required'],
     ];
 
     public function updated($propertyName)
@@ -23,10 +23,10 @@ class Admin extends Component
         $this->validateOnly($propertyName);
     }
 
-    public function openModalAdmin()
+    public function openModalAdminCreate()
     {
         $this->resetErrorBag();
-        $this->modals = true;
+        $this->openModal = true;
     }
 
     public function store(){
@@ -34,6 +34,7 @@ class Admin extends Component
             'username' => $this->username,
             'alias' => $this->alias,
             'role_id' => $this->role_id,
+            'password' => $this->password,
         ]);
         session()->flash('success','Admin Created');
 
