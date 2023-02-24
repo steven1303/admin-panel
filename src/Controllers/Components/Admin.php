@@ -9,7 +9,7 @@ use Steven1303\AdminPanel\Models\Admin as ModelsAdmin;
 class Admin extends Component
 {
     
-    public $username, $alias, $role_id;
+    public $username, $alias;
     public $openModal = false;
     
     protected $rules = [
@@ -33,7 +33,7 @@ class Admin extends Component
         ModelsAdmin::create([
             'username' => $this->username,
             'alias' => $this->alias,
-            'role_id' => $this->role_id,
+            'role_id' => $this->role_id, 
             'password' => $this->password,
         ]);
         session()->flash('success','Admin Created');

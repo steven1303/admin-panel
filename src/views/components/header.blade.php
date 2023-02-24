@@ -3,7 +3,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     @stack('stylesheet')
-    <title>HiliteUI Admin</title>
+    <title>
+        {{ isset($title) ? config('app.name') . ' | ' . $title : '' }}
+    </title>
     <!-- base:css -->
     <link rel="stylesheet" href="{{ asset('assets/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/vendor.bundle.base.css') }}">

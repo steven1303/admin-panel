@@ -1,3 +1,6 @@
+@php
+    $disabled = $errors->any() || empty($this->username) ? true : false;
+@endphp
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -18,8 +21,8 @@
                                         <div class="form-group row">
                                             <label class="col-sm-3 col-form-label">Username</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="username"
-                                                    id="username">
+                                                <input type="text" wire:model.debounce.500ms="username"
+                                                    class="form-control" name="username" id="username">
                                             </div>
                                         </div>
                                     </div>
@@ -75,10 +78,11 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <button type="submit" wire:target='store' wire:loading.attr='disabled'
+                        class="btn btn-primary mb-2">Submit</button>
+                    <button type="button" class="btn btn-primary mb-2">Clear</button>
                     <button type="button" class="btn btn-success">Submit</button>
                     <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                    <button type="button" class="btn btn-primary mb-2">Clear</button>
                 </div>
 
             </form>

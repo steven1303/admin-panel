@@ -11,11 +11,4 @@ return [
             2 => 'Disabled',
         ]
     ],
-    'validations' => [
-        'admins' => [
-            'username'=> ['required', 'unique:admins,username'],
-            'email'=> ['required', 'unique:admins,email'],
-            'alias' => ['required'],
-        ]
-    ]
 ];

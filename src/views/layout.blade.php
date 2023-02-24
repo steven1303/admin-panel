@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<x-admin::header />
+<x-admin::header :title="$title ?? ' '" />
 
 <body>
     <div class="container-scroller">
