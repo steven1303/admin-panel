@@ -26,7 +26,6 @@ class Admin extends Component
     public function openModalAdminCreate()
     {
         $this->resetErrorBag();
-        $this->openModal = true;
     }
 
     public function store(){

@@ -2,8 +2,10 @@
 
 namespace Steven1303\AdminPanel;
 
+use Livewire\Livewire;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Steven1303\AdminPanel\Controllers\Components\Admin;
 
 class AdminServiceProvider extends ServiceProvider
 {
@@ -32,5 +34,7 @@ class AdminServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/views','admin');
         // View Content
         $this->loadViewsFrom(__DIR__.'/views','admin-content');
+
+        Livewire::component('admin-panel', Admin::class);
     }
 }
