@@ -18,8 +18,8 @@ class CreateAdminsTable extends Migration
             if(config('admin-panel.settings.roles') == 1){
                 $table->bigInteger('role_id');
             }
-            $table->string('username');
-            $table->string('email');
+            $table->string('username')->unique();
+            $table->string('email')->unique();
             $table->string('alias');
             $table->string('password');
             $table->string('recovery_password');

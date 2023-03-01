@@ -27,6 +27,10 @@
                                                     <input type="text" wire:model.debounce.500ms="username"
                                                         class="form-control" name="username" id="username">
                                                 </div>
+                                                @error('username')
+                                                    <label id="username-error" class="error mt-2 text-danger"
+                                                        for="username">{{ $message }}</label>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -36,6 +40,10 @@
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>
+                                            @error('email')
+                                                <label id="email-error" class="error mt-2 text-danger"
+                                                    for="email">{{ $message }}</label>
+                                            @enderror
                                         </div>
                                     </div>
                                 </div>

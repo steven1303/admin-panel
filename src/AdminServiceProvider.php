@@ -35,6 +35,6 @@ class AdminServiceProvider extends ServiceProvider
         // View Content
         $this->loadViewsFrom(__DIR__.'/views','admin-content');
 
-        Livewire::component('admin-panel', Admin::class);
+        Livewire::component('adminPanel-admins', Admin::class);
     }
 }
