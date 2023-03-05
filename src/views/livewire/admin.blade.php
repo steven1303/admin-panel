@@ -2,7 +2,7 @@
     <x-slot name="title">
         {{ __('Admins') }}
     </x-slot>
-    <x-admin::contents.admin.modal />
+    <x-admin::contents.admin.form-input :idModal='modalAdmin' />
 
 
     <div class="col-12 grid-margin stretch-card">
@@ -10,7 +10,7 @@
             <div class="card-body">
                 <h4 class="card-title">List Admin</h4>
                 <button type="button" class="btn btn-info" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Create</button>
+                    data-bs-target="#modalAdmin">Create</button>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
