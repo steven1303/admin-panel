@@ -1,6 +1,6 @@
 <?php
 
-namespace Steven1303\AdminPanel\Controllers\Components;
+namespace Steven1303\AdminPanel\Livewire\Components;
 
 use Livewire\Component;
 use Steven1303\AdminPanel\Controllers\Layouts\App;

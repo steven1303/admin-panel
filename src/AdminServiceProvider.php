@@ -31,7 +31,7 @@ class AdminServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes/admin.php');
 
         // View
-        $this->loadViewsFrom(__DIR__.'/views','admin');
+        $this->loadViewsFrom(__DIR__.'/Components','admin-components');
 
         Livewire::component('adminPanel-admins', Admin::class);
     }

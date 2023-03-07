@@ -1,10 +1,10 @@
 <?php
 
-namespace Steven1303\AdminPanel\Controllers\Layouts;
+namespace Steven1303\AdminPanel\Components\Layouts;
 
 use Illuminate\View\Component;
 
-class Base extends Component
+class App extends Component
 {
     /**
      * Create a new component instance.
